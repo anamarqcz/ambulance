@@ -1,2 +1,16 @@
 
-<amb-user [name]="user.name" *ngFor="let user of listUsers"></amb-user>
+<table>
+    <tr *ngFor="let user of users">
+        <td>
+            <amb-user name="[user]" ></amb-user> 
+        </td>
+    </tr>
+</table>
+
+
+
+<!-- *ngFor hace un bucle sobre el componente.
+users es un arreglo
+name="{{user}}" interpolación para pasar el valor de la variable user 
+lo más usual en la interpolación es usar corchetes
+-->
